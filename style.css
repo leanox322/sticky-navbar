@@ -1,0 +1,100 @@
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.navbar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  position: fixed;
+  background-color: white;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+  transition: background-color 0.4s;
+}
+
+.navbar ul {
+  display: flex;
+  gap: 10px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: black;
+  font-family: cursive;
+  font-size: 18px;
+}
+
+.navbar a:hover {
+  color: red;
+}
+
+.top-container {
+  background-image: url(https://images.unsplash.com/photo-1547394765-185e1e68f34e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80);
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.top-container h1 {
+  color: white;
+  font-size: 50px;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  letter-spacing: 2px;
+}
+
+.text {
+  margin: 50px 5%;
+  text-align: justify;
+  font-family: sans-serif;
+  font-size: 24px;
+}
+
+.navbar.active {
+  background-color: black;
+}
+
+.navbar.active a {
+  color: white;
+}
+
+.navbar.active a:hover {
+  color: red;
+}
